@@ -1,9 +1,25 @@
-<!DOCTYPE html>
+<?php
+// Database connection settings
+$host = 'localhost';
+$username = 'gk57575';
+$password = 'gk@57@57@5';
+$database = 'gk';
+
+// Create a new PDO instance
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$database", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
+}
+
+// HTML code to be uploaded
+$htmlCode = '<!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>Resume</title>
-    <style>
+   <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -26,7 +42,7 @@
     </style>
 </head>
 <body>
-    <h1>Gokul.R</h1>
+ <h1>Gokul.R</h1>
     <p>Front end Web Developer</p>
     
     <div class="section">
@@ -77,5 +93,17 @@
         </ul>
     </div>
 </body>
-</html>
+</html>';
 
+// Prepare the SQL statement
+$sql = "INSERT INTO resumes (html_code) VALUES (:html_code)";
+$stmt = $pdo->prepare($sql);
+$stmt->bindParam(':html_code', $htmlCode);
+
+// Execute the statement
+if ($stmt->execute()) {
+    echo "HTML code uploaded successfully!";
+} else {
+    echo "Error uploading HTML code.";
+}
+?>
