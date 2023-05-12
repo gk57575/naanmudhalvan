@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        p {
+            margin: 5px 0;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gokul.R</h1>
+    <p>Front end Web Developer</p>
+    
+    <div class="section">
+        <h2>Contact Information</h2>
+        <p>Email: gokul.r@care.ac.in</p>
+        <p>Phone: 6374540212</p>
+        <p>Address: 2/100, melachatiram,paramakudi.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Summary</h2>
+        <p>A passionate and skilled Front end web developer in building responsive and user-friendly websites. Strong expertise in HTML, CSS, JavaScript. Committed to delivering high-quality code and continuously learning new technologies.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Education</h2>
+        <p>Bachelor of Engineering</p>
+        <p>CARE college of engineering,Affiliated to Anna University, Trichy,Tamil nadu</p>
+        <p>Graduation: on progress</p>
+    </div>
+    
+    <div class="section">
+        <h2>Experience <h4>- Nill</h4></h2>
+        <h3>Web Developer</h3>
+       
+        <ul>
+            <li>Developed and maintained responsive websites using HTML, CSS, and JavaScript.</li>
+            <li>Collaborated with cross-functional teams to design and implement new features.</li>
+            <li>Optimized website performance and ensured compatibility across different browsers and devices.</li>
+        </ul>
+        
+        <h3>Junior Web Developer</h3>
+      
+        <ul>
+            <li>Assisted in the development of client websites, including coding and debugging.</li>
+            <li>Participated in team meetings and contributed ideas for website improvement.</li>
+            <li>Performed website maintenance and updates.</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+        </ul>
+    </div>
+</body>
+</html>
 
