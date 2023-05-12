@@ -1,1 +1,23 @@
+import React from 'react';
 
+class Resume extends React.Component {
+  render() {
+    const resumeHtml = `<!DOCTYPE html>
+      <html>
+      <head>
+          <meta charset="UTF-8">
+          <title>Resume</title>
+          <!-- Rest of your HTML code here -->
+      </head>
+      <body>
+          <!-- Rest of your HTML code here -->
+      </body>
+      </html>`;
+
+    return (
+      <div dangerouslySetInnerHTML={{ __html: resumeHtml }} />
+    );
+  }
+}
+
+export default Resume;
